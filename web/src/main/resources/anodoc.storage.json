@@ -1,0 +1,12 @@
+{
+	"storageDir": "/home/strel/dev/anotheria/storage/moskito.org/",
+	"dev": {
+		"sstreltsov": "/home/strel/dev/anotheria/storage/moskito.org/"
+	},
+	"cms":{
+		"storageDir": "/moskito/app/cms/web/content"
+	},
+	"prod":{
+		"storageDir": "/opt/app/moskito.org/prod/content"
+	}
+}
