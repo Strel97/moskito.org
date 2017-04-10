@@ -4,26 +4,18 @@
 <!DOCTYPE html>
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
-    <title>${pagex.title}</title>
+    <title><ano:write name="pagex" property="title"/></title>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
     <meta content="width=device-width, initial-scale=1.0" name="viewport">
-    <meta name="description"
-          content="${site.description}"/>
-    <meta name="keywords"
-          content="${site.keywords}"/>
+    <meta name="description" content="<ano:write name="site" property="description"/>"/>
+    <meta name="keywords" content="<ano:write name="site" property="keywords"/>"/>
     <link rel="shortcut icon" href="static-int/img/favicon.ico" type="image/x-icon">
-    <link type="text/css" rel="stylesheet" rev="stylesheet" href="static-ext/bootstrap-2.3.2/css/bootstrap.css"/>
-    <link type="text/css" rel="stylesheet" rev="stylesheet" href="static-ext/bootstrap-2.3.2/css/bootstrap-responsive.css"/>
-    <link type="text/css" rel="stylesheet" rev="stylesheet" href="static-ext/bootstrap-modal-2.1/css/bootstrap-modal.css"/>
-    <link type="text/css" rel="stylesheet" rev="stylesheet" href="static-ext/font-awesome-3.2.1/css/font-awesome.min.css"/>
+    <jsp:include flush="true" page="util/MediaLinks.jsp" />
+
     <link href='http://fonts.googleapis.com/css?family=Handlee' rel='stylesheet' type='text/css'>
     <link href='http://fonts.googleapis.com/css?family=Lato:100,300,400,700' rel='stylesheet' type='text/css'>
     <!--Icons on the page may be changed by simply inserting the icon name.
     Icon names and previews are here: http://fortawesome.github.io/Font-Awesome/icons/ -->
-    <link type="text/css" rel="stylesheet" rev="stylesheet" href="static-int/css/common.css"/>
-    <!--[if IE 8]>
-    <link type="text/css" rel="stylesheet" rev="stylesheet" href="static-int/css/common_ie.css"/>
-    <![endif]-->
 </head>
 <body class="home">
 <div id="fb-root"></div>
@@ -70,5 +62,11 @@
     <!-- Footer Boxes END -->
 
 
+    <jsp:include flush="true" page="util/Scripts.jsp" />
+
+    <!--
+    Version: <ano:write name="applicationMavenVersion"/>${applicationMavenVersion}
+    Server: <ano:write name="requestServerName"/>${requestServerName}
+    -->
 </body>
 </html>

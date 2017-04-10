@@ -1,11 +1,16 @@
 {
-	"storageDir": "/home/strel/dev/anotheria/storage/moskito.org/",
+	"storageDir": "/opt/app/moskito.org/prod/content",
+
 	"dev": {
-		"sstreltsov": "/home/strel/dev/anotheria/storage/moskito.org/"
+		"sstreltsov": {
+			"storageDir": "/home/strel/Documents/data/moskito/anodoc"
+		}
 	},
+
 	"cms":{
 		"storageDir": "/moskito/app/cms/web/content"
 	},
+
 	"prod":{
 		"storageDir": "/opt/app/moskito.org/prod/content"
 	}
